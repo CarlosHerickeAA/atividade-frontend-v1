@@ -1,0 +1,132 @@
+body {
+    background-color: #C1C1C1;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.barra-lateral {
+    position: fixed;
+    left: 0;
+    width: 100px;
+    height: 100vh;
+    background-color: #1F4E79;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.btn-outline-primary {
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    top: 20px;
+    left: 15px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.btn-outline-primary:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.offcanvas-header, .offcanvas-body {
+    background-color: #b3b2b2;
+}
+
+.produtos, .serviços, .faq{
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.produtos:hover, .serviços:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Conteúdo principal */
+.container {
+    margin: 0 auto;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: auto;
+    max-width: 800px;
+}
+.coluna1 {
+    background-color: rgba(16, 18, 128, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: justify;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    line-height: 1.6;
+}
+.textodeapresentacao {
+    text-align: center;
+}
+.rodape {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: #1F4E79;
+    color: white;
+    position: fixed;
+    bottom: 0;
+}
+.HommeButton {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.HommeButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+.faq-block{
+    margin: 0 auto;
+    padding-top: 100px;
+    justify-content: center;
+    gap: 10px;
+    height: auto;
+    max-width: 800px;
+}
+.btn-faq{
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #808080;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.card-card-body{
+    background-color: #dfdfdf;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .barra-lateral {
+        width: 80px;
+    }
+    .container {
+        padding-top: 50px;
+    }
+    .produtos, .serviços {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Produtos</title>
+    <script>
+        // Função para exibir mensagem
+        function exibirMensagem(produto) {
+            alert(`Item: ${produto} fora de estoque`);
+        }
+    </script>
+    <style>
+        body {
+            background-color: #C1C1C1;
+            margin: 0;
+            padding: 0;
+        }
+        .HommeButton {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            z-index: 9999;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .HommeButton:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        .card-img-top {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            object-fit: contain;
+        }
+        .card-text{
+            color: black;
+            font-size:12px;
+        }
+    </style>
+</head>
+<body> 
+    <a class="HommeButton" href="index.html">Página Inicial</a>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Nossos Produtos</h1>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <!-- Produto 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens\produtos\prod1.png" class="card-img-top" alt="Produto 1">
+                    <div class="card-body text-center">
+                       <!--* <h5 class="card-title">Produto 1</h5>-->
+                        <p class="card-text">Adesivo Colorido Envelopamento Carro E Moto - 1m X 1m</p>
+                        <p class="card-text"><strong>R$ 34,99</strong></p>
+                        <button onclick="exibirMensagem('Adesivos Automotivos')" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Produto 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens\produtos\prod2.png" class="card-img-top" alt="Produto 2">
+                    <div class="card-body text-center">
+                        <p class="card-text">Bateria Carro Heliar 12v 60ah</p>
+                        <p class="card-text"><strong>R$ 429,90</strong></p>
+                        <button onclick="exibirMensagem('Bateria Heliar')" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Produto 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens\produtos\prod3.png" class="card-img-top" alt="Produto 3">
+                    <div class="card-body text-center">
+                        <p class="card-text">Extintor Veicular Pó ABC 0,9Kg 1kg 5 Anos - Fiat - GM</p>
+                        <p class="card-text"><strong>R$ 120,00</strong></p>
+                        <button onclick="exibirMensagem('Produto 3')" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Produto 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens\produtos\prod4.png" class="card-img-top" alt="Produto 4">
+                    <div class="card-body text-center">
+                        <p class="card-text">Palheta Flat Blade 14" - Tecfil - TPB14 - Unitário</p>
+                        <p class="card-text"><strong>R$ 32,34 </strong></p>
+                        <button onclick="exibirMensagem('Palheta Flat Blade 14')" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens\produtos\prod5.png" class="card-img-top" alt="Produto 4">
+                    <div class="card-body text-center">
+                        <p class="card-text">Higicouro Limpador De Couro Vonixx - 500ml Limpa E Higieniza</p>
+                        <p class="card-text"><strong>R$ 30,90a</strong></p>
+                        <button onclick="exibirMensagem('Produto 4')" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens\produtos\prod6.png" class="card-img-top" alt="Produto 4">
+                    <div class="card-body text-center">
+                        <p class="card-text">Filtro De Óleo Tecfil - PEL313</p>
+                        <p class="card-text"><strong>R$ 35,78</strong></p>
+                        <button onclick="exibirMensagem('Produto 4')" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens\produtos\prod7.png" class="card-img-top" alt="Produto 4">
+                    <div class="card-body text-center">
+                        <p class="card-text">Pneu 195/60r15 aro 15 Firestone F600 88H</p>
+                        <p class="card-text"><strong>R$ 379,90</strong></p>
+                        <button onclick="exibirMensagem('Produto 4')" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens\produtos\prod8.png" class="card-img-top" alt="Produto 4">
+                    <div class="card-body text-center">
+                        <p class="card-text">3M, Auto, Cera Brilho Intenso, Com Silicone e Carnaúba, Alta Performance, 200g, Multi-colored</p>
+                        <p class="card-text"><strong>R$ 26,83</strong></p>
+                        <button onclick="exibirMensagem('Produto 4')" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens\produtos\prod9.png" class="card-img-top" alt="Produto 4">
+                    <div class="card-body text-center">
+                        <p class="card-text">Kit Pastilha Disco Dianteiro Ventilado HB20 1.6 16V 2016 a 2019 Hipper Freios Fras-le</p>
+                        <p class="card-text"><strong>R$ 291,56</strong></p>
+                        <button onclick="exibirMensagem('Produto 4')" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens\produtos\prod10.png" class="card-img-top" alt="Produto 4">
+                    <div class="card-body text-center">
+                        <p class="card-text">Jogo de Tapetes Automotivos Emborrachados Universal para Carros (Kit 5 Peças Logo F-I-A-T)</p>
+                        <p class="card-text"><strong>R$ 79,00</strong></p>
+                        <button onclick="exibirMensagem('Produto 4')" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens\produtos\prod11.png" class="card-img-top" alt="Produto 4">
+                    <div class="card-body text-center">
+                        <p class="card-text">Carregador de bateria de carro totalmente automático display lcd digital 2a carregamento rápido 3 estágios chumbo ácido agm gel carregadores de bateria</p>
+                        <p class="card-text"><strong>R$ 38,49</strong></p>
+                        <button onclick="exibirMensagem('Produto 4')" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens\produtos\prod12.png" class="card-img-top" alt="Produto 4">
+                    <div class="card-body text-center">
+                        <p class="card-text">EDA Chave De Roda Cruz Espátula 17 19 E 21 Mm Eda</p>
+                        <p class="card-text"><strong>R$ 49,67</strong></p>
+                        <button onclick="exibirMensagem('Produto 4')" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens\produtos\prod13.png" class="card-img-top" alt="Produto 4">
+                    <div class="card-body text-center">
+                        <p class="card-text">Óleo Semissintético 15W40 Lubrax Tecno SM 500ml</p>
+                        <p class="card-text"><strong>R$ 17,00</strong></p>
+                        <button onclick="exibirMensagem('Produto 4')" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens\produtos\prod14.png" class="card-img-top" alt="Produto 4">
+                    <div class="card-body text-center">
+                        <p class="card-text">Óleo Lubrificante Mineral 25W50 Lubrax Essencial Alta Rodagem 500ml</p>
+                        <p class="card-text"><strong>R$ 16,06</strong></p>
+                        <button onclick="exibirMensagem('Produto 4')" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens\produtos\prod15.png" class="card-img-top" alt="Produto 4">
+                    <div class="card-body text-center">
+                        <p class="card-text">Desengripante Spray 300ml TE0001161 LUB FAST</p>
+                        <p class="card-text"><strong>R$ 10,98</strong></p>
+                        <button onclick="exibirMensagem('Produto 4')" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>  
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens\produtos\prod16.png" class="card-img-top" alt="Produto 4">
+                    <div class="card-body text-center">
+                        <p class="card-text">Limpa Contatos Eletricos 300ml AE06000019 Mundial Prime</p>
+                        <p class="card-text"><strong>R$ 8,50</strong></p>
+                        <button onclick="exibirMensagem('Produto 4')" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
