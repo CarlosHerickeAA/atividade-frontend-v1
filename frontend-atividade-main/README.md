@@ -5,6 +5,7 @@ p1 ; (home) apresentação da empresa, com botoes de redirecionamento para as p2
 p2 ; segunda pagina pagina de produtos ({imagens com descrição e preço})
 p3 ; terceira pagina pagina de servisos (pagina de agendamento **e orçamento previo**)ok/2
 ***p4 uma pgina de faq para complementar
+colocar um botão com logo do Instagram 
 
 
 
